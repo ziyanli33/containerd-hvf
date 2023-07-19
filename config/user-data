@@ -1,0 +1,11 @@
+#cloud-config
+
+users:
+  - name: hvf
+    sudo: ALL=(ALL) NOPASSWD:ALL
+chpasswd:
+  list: |
+    hvf:linux
+    root:42llC2gUNhNXCKH
+  expire: False
+
